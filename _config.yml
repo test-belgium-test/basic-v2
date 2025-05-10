@@ -1,0 +1,5 @@
+title: Basic V2 API
+theme: minima
+markdown: kramdown
+include:
+  - docs/technical_specs/basic.yaml
