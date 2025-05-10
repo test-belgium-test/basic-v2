@@ -8,20 +8,22 @@ permalink: /api/
 <div id="swagger-ui"></div>
 
 <!-- Swagger UI -->
-<link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist/swagger-ui.css" />
-<script src="https://unpkg.com/swagger-ui-dist/swagger-ui-bundle.js"></script>
-<script src="https://unpkg.com/swagger-ui-dist/swagger-ui-standalone-preset.js"></script>
+    <link rel="stylesheet" type="text/css" href="docs/lib4ui/swagger-ui.css" />
+    <script src="docs/lib4ui/swagger-ui-bundle.js" charset="UTF-8"></script>
+    <script src="docs/lib4ui/swagger-ui-standalone-preset.js" charset="UTF-8"></script>
+
 
 <script>
   window.onload = function () {
     SwaggerUIBundle({
-      url: "/docs/technical_specs/basic.yaml",
-      dom_id: "#swagger-ui",
-      presets: [
-        SwaggerUIBundle.presets.apis,
-        SwaggerUIStandalonePreset
-      ],
-      layout: "StandaloneLayout"
-    });
+        url: "technical_specs/basic.yaml",
+        dom_id: '#swagger-ui',
+        deepLinking: true,
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        layout: "StandaloneLayout"
+      });
   };
 </script>
